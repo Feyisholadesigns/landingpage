@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="#" ><img src="./shop.png" ></a>
+                <h1>Store</h1>
+            </div>
+
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a</li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#"><img src="./shopping-cart.png" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="text">
+                <span>Outfit of the day</span>
+                <h3>All your</h3>
+                <h1>Styles are here</h1>
+                <p>Clothes offer a range of benefits,from protecting our bodies from elements to helping us express our personal style. <br>Give us the chance to style you today. <br>Let's go</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="img">
+                <img id="big-img" src="./jacket1-removebg-preview.png">
+                
+            </div>
+            <div class="small">
+                <img onclick="myTshirt(this.src)"  src="./jacket1-removebg-preview.png">
+                <img onclick="myTshirt(this.src)" src="./jacket3.png">
+                <img onclick="myTshirt(this.src)" src="./jacket4.png">
+            </div>
+        </div>
+    </div>
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function myTshirt(shirt){
+            bigImage.src = shirt
+        }
+    </script>
+</body>
+</html>
